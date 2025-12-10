@@ -15,8 +15,8 @@ jobs:
     env:
       IMAGE_NAME: todo-delete-tasks-api
       IMAGE_TAG: v1
-      ACR_NAME: acr028
-      ACR_LOGIN_SERVER: acr028.azurecr.io
+      ACR_NAME: acrdevtodoproject010
+      ACR_LOGIN_SERVER: acrdevtodoproject010.azurecr.io
 
     steps:
       - name: Checkout code
