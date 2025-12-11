@@ -12,7 +12,7 @@ spec:
        paths:
         - backend:                                                                         #ish backend main service deployment ki detail aae hai ya aayegi
            service: 
-            name: todo-get-tasks-api
+            name: todo-get-task-api
             port:
              number: 80
           path: /
