@@ -11,10 +11,10 @@ spec:
       http:
        paths:
         - backend:                                                                         #ish backend main service deployment ki detail aae hai ya aayegi
-           service:
-            name: service-deployment
+           service: 
+            name: todo-ui
             port:
-             number: 2512
+             number: 80
           path: /
           pathType: Prefix   
          
