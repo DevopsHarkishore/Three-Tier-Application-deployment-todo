@@ -1,1 +1,21 @@
 
+apiVersion: networking.k8s.io/v1 
+kind: Ingress
+metadata: 
+  name: ingress-addtask
+  labels:
+    app: addtask-label
+spec:
+  ingressClassName:  azure-application-gateway                                            #ish se pahle azure k8s cluter jake networking/ jakar ingress-app gateway ko enable krte hai
+  rules:
+    - host: todoaddtask.techno028.shop
+      http:
+       paths:
+        - backend:                                                                         #ish backend main service deployment ki detail aae hai ya aayegi
+           service: 
+            name: todo-add-tasks-api
+            port:
+             number: 80
+          path: /
+          pathType: Prefix   
+         
